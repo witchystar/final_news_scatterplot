@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tone vs. Engagement Scatterplot</title>
+    <link rel="stylesheet" href="scatterplot_style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h2>News Coverage: Tone vs. Engagement</h2>
+        <p class="subtitle">
+            Exploring the relationship between news sentiment and article volume: 
+            This graph visualizes whether more negative tones correlate with higher 
+            public engagement as measured by the number of published articles.
+        </p>
+    </header>
+
+    <div id="error" class="error-msg">
+        Error: The CSV file could not be loaded. Ensure 'institutional_news.csv' is in the same folder.
+    </div>
+
+    <div id="chart"></div>
+    <div id="tooltip" class="tooltip" style="opacity: 0;"></div>
+
+    <script src="scatterplot_script.js"></script>
+</body>
+</html>
